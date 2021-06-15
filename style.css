@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
+body{
+  position: relative;
+}
+
+body::after{
+  content: '';
+  background: url(img/sfondomandala1.png) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+nav{
+  background: rgba(255, 255, 255, 0.72);
+
+}
+
+.section{
+  padding: 5rem 0 1rem 0;
+}
+p{
+  font-size: 1.5rem;
+}
+
+.container, .container-fluid, nav{
+  font-family: "Stint Ultra Condensed";
+}
+.navbar-brand img{
+  width: 14rem;
+}
+.navbar-nav{
+  font-size: 2rem;
+margin-right: 1rem;
+}
+.nav-item{
+  color: black;
+  margin-left: 2rem;
+}
+.nav-item:hover{
+  color: black;
+}
+
+
+.target {
+  position: absolute;
+  margin-top: -0.7rem;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.nav-link,
+.target {
+  transition: all .35s ease-in-out;
+}
+
+
+/* Set the border color */
+
+    .custom-toggler.navbar-toggler {
+        border: 2px solid rgb(102, 84, 208) ;
+        border-radius: 15px;
+    }
+    /* Setting the stroke to green using rgb values (0, 128, 0) */
+
+    .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(143, 132, 210)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    #carousel-words{
+      font-size: 4rem;
+    }
+
+
+    /* BIO AND SKILLS*/
+
+    .container-skill {
+      width: 100%;
+    }
+
+    @keyframes load {
+      from{
+        width: 0%;
+      }
+    }
+    @-webkit-keyframes load{
+      from{
+        width:0%;
+      }
+    }
+    @-moz-keyframes load{
+      from {
+        width: 0%
+      }
+    }
+    @-o-keyframes load{
+      from {
+        width: 0%
+      }
+    }
+
+    .bar{
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0.2rem;
+      margin-bottom: 1rem;
+      color: #3a4a52;
+      border-radius: 15px;
+      width: 100%;
+    }
+    .bar:last-of-type{
+      margin-bottom: 0;
+    }
+
+   .bar::before{
+      content:attr(data-skill);
+      background-color: #a8caad;
+      display: inline-block;
+      padding: 7px 0 7px 10px;
+      border-radius: inherit;
+      animation: load 2s 0s;
+      -webkit-animation: load 2s 0s;
+      -moz-animation: load 2s 0s;
+      -o-animation: load 2s 0s;
+    }
+  .bar.learning::before{
+      width: calc(20% - 10px);
+    }
+    .bar.basic::before{
+      width: calc(40% - 10px);
+    }
+    .bar.intermediate::before{
+      width: calc(60% - 10px);
+    }
+    .bar.advanced::before{
+      width: calc(80% - 10px);
+    }
+    .bar.expert::before{
+      width: calc(100% - 10px);
+    }
+
+    .btn{
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    video{
+      width:70%;
+
+    }
+
+    .fa-facebook, .fa-instagram, .fa-envelope{
+font-size: 5em;
+    }
+    .fa-facebook:hover, .fa-instagram:hover, .fa-envelope:hover{
+font-size: 6em;
+opacity: 0.7;
+text-shadow: 2px 2px;
+    }
+
+    footer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+    }
+    footer p{
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+@media only screen and (max-width:768px){
+  .navbar-nav{
+    text-align: center;
+  }
+
+  nav{
+    background-color: WHITE;
+
+  }
+  .navbar-brand{
+    margin-left: 2rem;
+  }  .custom-toggler.navbar-toggler {
+    position:absolute;
+    right: 1.5rem;
+    top: 0.7rem;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-envelope{
+font-size: 4em;
+
+    }
+    .fa-facebook:hover, .fa-instagram:hover, .fa-envelope:hover{
+font-size: 5em;
+opacity: 0.7;
+text-shadow: 2px 2px;
+    }
+
+    #carousel-words{
+      font-size: 3rem;
+    }
+    .home img{
+      width: 40%;
+    }
+    .home{
+      padding-bottom: 2em;
+    }
+    .section{
+      margin: 4rem 0;
+    }
+}
+@media only screen and (max-width:576px){
+  .fa-facebook, .fa-instagram, .fa-envelope{
+font-size: 3em;
+  }
+  .section{
+    margin: 2rem 0;
+  }
+
+}
