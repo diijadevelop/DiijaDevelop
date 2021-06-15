@@ -1,4 +1,5 @@
 ### Hi there 👋
+This is my portfolio. Here you can see my projects and contacts!
 
 <!--
 **diijadevelop/DiijaDevelop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
