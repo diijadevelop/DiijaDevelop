@@ -15,7 +15,7 @@ body{
 
 body::after{
   content: '';
-  background: url('../img/sfondomandala1.png') no-repeat center top;
+  background: url('../img/sfondomandala1.svg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,6 +79,7 @@ margin-right: 1rem;
     .custom-toggler.navbar-toggler {
         border: 2px solid rgb(102, 84, 208) ;
         border-radius: 15px;
+
     }
     /* Setting the stroke to green using rgb values (0, 128, 0) */
 
@@ -215,10 +216,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
   }
   .navbar-brand{
     margin-left: 2rem;
-  }  .custom-toggler.navbar-toggler {
+  }
+   .custom-toggler.navbar-toggler {
     position:absolute;
     right: 1.5rem;
-    top: 0.7rem;
+    top: 1.2rem;
     }
 
     .fa-facebook, .fa-instagram, .fa-envelope{
@@ -245,7 +247,7 @@ text-shadow: 2px 2px;
       height: 100%;
     }
     .section:last-of-type{
-      margin-bottom: 6rem;
+      margin-bottom: 10rem;
     }
 
     footer{
