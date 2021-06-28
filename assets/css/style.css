@@ -15,7 +15,7 @@ body{
 
 body::after{
   content: '';
-  background: url('../img/sfondomandala1.svg') no-repeat center top;
+  background: url('../img/sfondomandala2.svg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,6 +38,10 @@ nav{
 }
 p{
   font-size: 1.5rem;
+}
+.textsection{
+  background-color: white;
+  border-radius: 0.6em;
 }
 
 .container, .container-fluid, nav{
